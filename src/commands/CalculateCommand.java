@@ -18,7 +18,7 @@ public class CalculateCommand implements Command{
         String equality = (number % 2 == 0)?"четное":"нечетное";
         String sign = (number >= 0)?"положительное":"отрицательное";
         String resultMessage = String.format(
-                "Число: %d\n" + "Свойство1: %s\n" + "Свойство2: %s\n", number, equality, sign
+                "Число: %d\n Свойство1: %s\n Свойство2: %s\n", number, equality, sign
         );
         return new CommandResult(resultMessage);
     }

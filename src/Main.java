@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import commands.*;
-public class Main1 {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -25,7 +25,7 @@ public class Main1 {
 
             CommandResult result = commandHandler.executeCommand(commandName, argument);
 
-            if (result.shouldExit()) {
+            if (result.isShouldExit()) {
                 isRunning = false;
             }
 
